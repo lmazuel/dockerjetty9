@@ -2,7 +2,7 @@ FROM java:7
 
 MAINTAINER lmazuel
 
-ENV JETTY_VERSION 9.3.3.v20150827
+ENV JETTY_VERSION 9.2.13.v20150730
 
 RUN wget http://download.eclipse.org/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.zip -O /tmp/jetty.zip && \
     cd /opt && jar xf /tmp/jetty.zip && \
