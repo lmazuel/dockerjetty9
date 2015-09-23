@@ -12,7 +12,8 @@ RUN wget http://download.eclipse.org/jetty/${JETTY_VERSION}/dist/jetty-distribut
 ENV JETTY_HOME /opt/jetty
 ENV PATH $PATH:$JETTY_HOME/bin
 
-COPY mariadb-java-client-1.1.7.jar /opt/jetty/lib/ext/
+COPY mariadb-java-client-1.2.2.jar /opt/jetty/lib/ext/
+COPY slf4j-api-1.7.12.jar /opt/jetty/lib/ext/
 
 VOLUME /conf
 WORKDIR /opt/jetty
